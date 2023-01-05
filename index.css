@@ -1,9 +1,7 @@
 body {
-    margin: 32px;
     color: white;
     background-color: #273549;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    
 }
 
 h1 {
@@ -12,18 +10,25 @@ h1 {
 
 h5 {
     margin: 0px;
-    margin-bottom: 32px;
 }
 
 button {
     border: none;
     border-radius: 0.3rem;
-    margin-bottom: 12px;
+    margin: 6px;
     font-size: 14px;
     background-color: #2F3E53;
     color: #10B981;
-    padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 160px;
+    height: 40px;
+}
+
+input {
+    padding: 6px 10px;
+    margin: 12px;
+    width: 144px;
 }
 
 #generate-el {
@@ -31,11 +36,36 @@ button {
     background-color: #10B981;
 }
 
+.hero {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px;
+    padding: 24px;
+}
+
 .green {
     color: #10B981;
     margin-bottom: 10px
 }
 
+.password-length {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
 .passwords {
     align-items: center;
+}
+
+button:hover {
+    transform: scale(105%);
+}
+
+button:active {
+    transform: scale(95%);
 }

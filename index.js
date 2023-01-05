@@ -6,7 +6,9 @@ let passwordOne = document.getElementById("passwordOne-el")
 let passwordTwo = document.getElementById("passwordTwo-el")
 
 function renderPassword() {
-      for (let i = 0; i < 15; i++) {
+characterLength = document.getElementById("characterLength-el").value
+
+      for (let i = 0; i < characterLength; i++) {
         let char = Math.floor(Math.random() * characters.length)
         password += characters[char]
       }
@@ -22,8 +24,10 @@ function generatePassword() {
 
 function copyPasswordOne() {
     navigator.clipboard.writeText(passwordOne.textContent)
+    alert("Copied the text: " + passwordOne.textContent);
 }
 
 function copyPasswordTwo() {
-    document.getElementById("passwordTwo-el")
+    navigator.clipboard.writeText(passwordTwo.textContent)
+    alert("Copied the text: " + passwordTwo.textContent);
 }
