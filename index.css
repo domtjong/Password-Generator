@@ -1,3 +1,41 @@
 body {
+    margin: 32px;
+    color: white;
+    background-color: #273549;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+h1 {
     margin: 0;
+}
+
+h5 {
+    margin: 0px;
+    margin-bottom: 32px;
+}
+
+button {
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 12px;
+    font-size: 14px;
+    background-color: #2F3E53;
+    color: #10B981;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#generate-el {
+    color: white;
+    background-color: #10B981;
+}
+
+.green {
+    color: #10B981;
+    margin-bottom: 10px
+}
+
+.passwords {
+    align-items: center;
 }
